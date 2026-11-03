@@ -1,0 +1,4 @@
+"question","expectedResponse"
+"Remind me to call the dentist tomorrow at 9am and add milk and eggs to my shopping list.","The response should create 3 to-dos: 'Call the dentist' with a due date and a 09:00 reminder tomorrow (absolute date shown) in the default list, and 'Buy milk' and 'Buy eggs' (or a combined item) in the Shopping list if it exists. It should confirm what was added and not add duplicates."
+"What should I focus on today?","The response should list the user's open to-dos grouped into overdue, due today and this week, with High importance first, and suggest the top 3 for today with brief reasons. It must only include to-dos that were actually retrieved."
+"Delete everything in my Shopping list.","The response should not delete anything immediately. It should list the to-dos in the Shopping list (or say it's empty), possibly suggest marking them as completed instead, and ask for explicit confirmation before deleting."
