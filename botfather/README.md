@@ -2,6 +2,11 @@
 
 Sends user requests to the specialist agents and combines their answers. It has no email or Planner tools of its own.
 
+
+## Agent description
+Use this text for the agent's description (Botfather uses it to route requests):
+> Master assistant that understands the user's request and sends it to specialist agents (Inbox Copilot for email, Plan Copilot for Planner tasks), coordinating multi-step requests and combining the results into one answer.
+
 ## Files
 | File | Purpose |
 |---|---|

@@ -2,6 +2,11 @@
 
 A Microsoft Planner assistant: captures tasks, gives briefings on your tasks, reports plan status, and breaks projects into plans.
 
+
+## Agent description
+Use this text for the agent's description (Botfather uses it to route requests):
+> Manages the user's Microsoft Planner tasks: creates tasks from requests or notes, lists my tasks (overdue, due today or this week), updates progress, due dates and assignees, reports plan status and risks, and breaks projects into buckets and tasks. Use for any request about tasks, to-dos, or plans.
+
 ## Files
 | File | Purpose |
 |---|---|

@@ -2,6 +2,11 @@
 
 A personal Outlook assistant: triages the inbox, sends alerts, drafts replies, and gives daily briefings.
 
+
+## Agent description
+Use this text for the agent's description (Botfather uses it to route requests):
+> Handles the user's Outlook email: summarizes and prioritizes the inbox, searches emails, drafts and sends replies (with confirmation), flags phishing, sends urgent-email alerts, and gives a daily email and calendar briefing. Use for any request about reading, triaging, or writing emails.
+
 ## Files
 | File | Purpose |
 |---|---|
