@@ -22,7 +22,7 @@ Add them from **Build → Connected agents**:
 | Plan Copilot | [`../planner-agent`](../planner-agent) |
 | Meeting Copilot | [`../meeting-agent`](../meeting-agent) |
 | GitHub Copilot | [`../github-agent`](../github-agent) |
-| Software Engineer | [Software Engineer](https://github.com/leonardo-russo-promx/software-engineer-agent) | Copilot Studio agent for technical analysis and project planning; read-only |
+| Software Engineer | [`../software-engineer-agent`](../software-engineer-agent) |
 | To Do Copilot | [`../todo-agent`](../todo-agent) |
 | Calendar Copilot | [`../calendar-agent`](../calendar-agent) |
 
