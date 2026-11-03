@@ -5,7 +5,8 @@ description: Builds one combined daily briefing across email and Planner. Use wh
 # Daily command center
 
 ## Steps
-1. Ask Inbox Copilot for the daily briefing: email counts by priority, the top 5 emails to handle, today's meetings, and replies the user is still waiting on.
+1. Ask Inbox Copilot for the daily briefing: email counts by priority, the top 5 emails to handle, and replies the user is still waiting on.
+1b. Ask Calendar Copilot for today's overview: meetings, conflicts, and free blocks.
 2. Ask Plan Copilot for my tasks: overdue, due today or this week, and the top 3 to focus on.
 3. Ask To Do Copilot for personal to-dos: overdue and due today.
 4. Combine and remove duplicates. If an email and a task are about the same thing, show them once.
@@ -15,7 +16,7 @@ description: Builds one combined daily briefing across email and Planner. Use wh
 - 🎯 **Top 3 priorities today**: across email and tasks, with a one-line reason each
 - 📬 **Email**: counts and urgent items
 - ✅ **Tasks**: Planner and To Do items, overdue and due today
-- 📅 **Meetings**: times and titles
+- 📅 **Meetings**: times and titles, conflicts, and free blocks (from Calendar Copilot)
 - End by offering 2–3 next actions ("Draft replies for urgent emails?", "Turn action emails into tasks?")
 
 ## Rules

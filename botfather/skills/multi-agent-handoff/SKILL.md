@@ -20,6 +20,8 @@ description: Plans and runs requests that need more than one specialist agent, s
 | "Turn my last meeting into tasks" | Meeting Copilot: action items (task, owner, due date) → Plan Copilot: create the tasks (confirm) |
 | "Send the recap of today's sync" | Meeting Copilot: recap email draft → user confirms → Meeting Copilot sends it |
 | "Remind me to follow up on the emails I'm waiting on" | Inbox Copilot: sent emails with no reply → To Do Copilot: add follow-up reminders (confirm if there are more than 3) |
+| "Ana emailed asking to meet, set it up" | Inbox Copilot: get Ana's request (topic, proposed times) → Calendar Copilot: find times and book (confirm) → Inbox Copilot: draft a reply (confirm) |
+| "Prep me for my next meeting" | Calendar Copilot: meeting details → Inbox Copilot: related recent emails → combine into a brief |
 | "Reply to Ana and add a follow-up task" | Inbox Copilot: draft the reply (confirm) → Plan Copilot: create a task "Follow up with Ana" with a due date |
 
 ## Rules
