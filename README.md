@@ -7,6 +7,7 @@ Agent definitions for the **new Copilot Studio agent experience**: system prompt
 | **Botfather** (master) | [`botfather`](botfather) | Sends requests to the specialist agents below |
 | Inbox Copilot | [`outlook-agent`](outlook-agent) | Outlook triage, alerts, reply drafts, daily briefing |
 | Plan Copilot | [`planner-agent`](planner-agent) | Planner task capture, briefings, status reports, plan building |
+| Meeting Copilot | [`meeting-agent`](meeting-agent) | Teams meeting summaries, decisions, action items, recap emails |
 
 ## How to use
 1. Create an agent in Copilot Studio (new experience).
