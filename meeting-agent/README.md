@@ -16,24 +16,17 @@ Use this text for the agent's description (Botfather uses it to route requests):
 ## Tools (connectors)
 | Connector | Actions |
 |---|---|
-| Office 365 Outlook | Get events (V4) (find the meeting and its join URL), Draft an email message, Send an email (V2) (ask before running) |
-| **Teams Transcripts** (custom connector, see below) | Find meeting by join URL, List transcripts, Get transcript content |
-| Microsoft Teams (optional) | List chat messages (fallback when there is no transcript), Post message in a chat or channel (ask before running) |
+| Microsoft Teams | **List meeting transcripts**, **Get meeting transcript content**, List call transcripts, Get all ad-hoc call transcripts, List chat messages (fallback when there is no transcript), Post message in a chat or channel (ask before running) |
+| Office 365 Outlook | Get events (V4) (find the meeting), Draft an email message, Send an email (V2) (ask before running) |
 | Office 365 Users | Search for users (match speakers and attendees to people) |
 
 Tasks are created through **Plan Copilot** via Botfather, so no Planner connector is needed here.
 
-## Transcript access (custom connector)
-The standard Teams connector has no transcript actions, so create a custom connector to Microsoft Graph:
-- Auth: OAuth 2.0 (Microsoft Entra ID), **delegated** permission `OnlineMeetingTranscript.Read.All` (plus `OnlineMeetings.Read`). Requires admin consent.
-- Operations:
-  - `GET /me/onlineMeetings?$filter=JoinWebUrl eq '{joinUrl}'`: find the meeting
-  - `GET /me/onlineMeetings/{meetingId}/transcripts`: list transcripts
-  - `GET /me/onlineMeetings/{meetingId}/transcripts/{transcriptId}/content?$format=text/vtt`: transcript text
-- Tenant prerequisites: transcription turned on in the Teams meeting policy, and **Graph API access to transcripts** turned on (Teams admin center → Meetings → Meeting settings → Transcript API access). Otherwise Graph returns 403.
-- Check: with delegated permissions, access may be limited to meetings the user organized. Test with a meeting you attended but didn't organize.
+## Transcript prerequisites
+- Transcription is turned on in the Teams meeting policy, and the meeting was transcribed.
+- **Graph API access to transcripts** is turned on (Teams admin center → Meetings → Meeting settings → Transcript API access). Otherwise the actions fail with 403.
+- Check: access may be limited to meetings the user organized. Test with a meeting you attended but didn't organize.
 - Fallback: the user can paste or upload a transcript or notes, and every skill works on that text.
-
 ## Triggers (optional)
 - Recurrence (end of day): "Recap today's meetings" digest
 
