@@ -22,6 +22,7 @@ description: Plans and runs requests that need more than one specialist agent, s
 | "Remind me to follow up on the emails I'm waiting on" | Inbox Copilot: sent emails with no reply → To Do Copilot: add follow-up reminders (confirm if there are more than 3) |
 | "Ana emailed asking to meet, set it up" | Inbox Copilot: get Ana's request (topic, proposed times) → Calendar Copilot: find times and book (confirm) → Inbox Copilot: draft a reply (confirm) |
 | "Prep me for my next meeting" | Calendar Copilot: meeting details → Inbox Copilot: related recent emails → combine into a brief |
+| "Summarize open GitHub issues and make me a follow-up list" | GitHub Copilot: list open issues and blockers → To Do Copilot: add personal follow-up reminders after showing the proposed list |
 | "Reply to Ana and add a follow-up task" | Inbox Copilot: draft the reply (confirm) → Plan Copilot: create a task "Follow up with Ana" with a due date |
 
 ## Rules

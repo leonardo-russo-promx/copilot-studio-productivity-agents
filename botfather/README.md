@@ -5,7 +5,7 @@ Sends user requests to the specialist agents and combines their answers. It has 
 
 ## Agent description
 Use this text for the agent's description (Botfather uses it to route requests):
-> Master assistant that understands the user's request and sends it to specialist agents (Inbox Copilot for email, Plan Copilot for Planner tasks, Meeting Copilot for Teams meetings, To Do Copilot for personal to-dos, Calendar Copilot for scheduling and the calendar), coordinating multi-step requests and combining the results into one answer.
+> Master assistant that understands the user's request and sends it to specialist agents (Inbox Copilot for email, Plan Copilot for Planner tasks, GitHub Copilot for repository and issue/PR tracking, Meeting Copilot for Teams meetings, To Do Copilot for personal to-dos, Calendar Copilot for scheduling and the calendar), coordinating multi-step requests and combining the results into one answer.
 
 ## Files
 | File | Purpose |
@@ -21,6 +21,7 @@ Add them from **Build → Connected agents**:
 | Inbox Copilot | [`../outlook-agent`](../outlook-agent) |
 | Plan Copilot | [`../planner-agent`](../planner-agent) |
 | Meeting Copilot | [`../meeting-agent`](../meeting-agent) |
+| GitHub Copilot | [`../github-agent`](../github-agent) |
 | To Do Copilot | [`../todo-agent`](../todo-agent) |
 | Calendar Copilot | [`../calendar-agent`](../calendar-agent) |
 
