@@ -16,6 +16,7 @@ flowchart TD
 	Botfather --> Meeting[Meeting Copilot<br/>Meeting notes and follow-ups]
 	Botfather --> Todo[To Do Copilot<br/>Personal lists and reminders]
 	Botfather --> Calendar[Calendar Copilot<br/>Scheduling and meeting prep]
+	Botfather --> PowerPoint[Presentation Copilot<br/>proMX-branded PowerPoint]
 ```
 
 The arrows represent Botfather's **connected-agent routing**, not direct connections among specialists. For example, meeting action items that should become Planner tasks are handed off through Botfather.
@@ -32,6 +33,7 @@ The arrows represent Botfather's **connected-agent routing**, not direct connect
 | **Meeting Copilot** | [meeting-agent](meeting-agent) | Meeting summaries, decisions, action items, and recap drafts | **Transcript actions are currently blocked**; use pasted or uploaded transcripts and notes until access is enabled |
 | **To Do Copilot** | [todo-agent](todo-agent) | Personal reminders, lists, and individual task reviews | Use Plan Copilot for shared team plans and tasks assigned to others |
 | **Calendar Copilot** | [calendar-agent](calendar-agent) | Calendar overviews, availability, scheduling, focus time, meeting prep | Creating, updating, or deleting events and responding to invitations should require confirmation |
+| **Presentation Copilot** | [powerpoint-agent](powerpoint-agent) | Creating slide narratives and branded PowerPoint files | Actual `.pptx` creation requires a configured file-generation action and an approved template; otherwise it returns slide-ready content |
 
 Each agent folder has its own README with its description, recommended connectors and actions, settings, and relevant limitations. See its `skills/` directory for detailed skill instructions.
 
@@ -55,6 +57,7 @@ software-engineer-agent/   Technical analysis and planning
 meeting-agent/             Meeting summaries and follow-ups
 todo-agent/                Personal To Do lists and reminders
 calendar-agent/            Calendar and scheduling workflows
+powerpoint-agent/           Presentation content and branded PowerPoint generation
 ```
 
 ## Set Up an Agent
